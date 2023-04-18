@@ -49,6 +49,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polly.RateLimiting.Tests", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polly.TestUtils", "Polly.TestUtils\Polly.TestUtils.csproj", "{C04DEE61-C1EA-4028-B457-CDBD304B8ED9}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Samples", "Samples\Samples.csproj", "{1E440122-8A74-4605-8AAD-6C8CD7A50A1A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{C04DEE61-C1EA-4028-B457-CDBD304B8ED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C04DEE61-C1EA-4028-B457-CDBD304B8ED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C04DEE61-C1EA-4028-B457-CDBD304B8ED9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E440122-8A74-4605-8AAD-6C8CD7A50A1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E440122-8A74-4605-8AAD-6C8CD7A50A1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E440122-8A74-4605-8AAD-6C8CD7A50A1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E440122-8A74-4605-8AAD-6C8CD7A50A1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
