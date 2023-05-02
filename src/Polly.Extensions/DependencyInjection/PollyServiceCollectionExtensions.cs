@@ -31,6 +31,33 @@ public static class PollyServiceCollectionExtensions
     /// This call enables the telemetry for the registered resilience strategy.
     /// </para>
     /// </remarks>
+    public static IServiceCollection AddResilienceStrategy(
+        this IServiceCollection services,
+        string key,
+        Action<ResilienceStrategyBuilder> configure)
+    {
+        Guard.NotNull(services);
+        Guard.NotNull(key);
+        Guard.NotNull(configure);
+
+        return services.AddResilienceStrategy(key, context => configure(context.Builder));
+    }
+
+    /// <summary>
+    /// Adds a resilience strategy to service collection.
+    /// </summary>
+    /// <typeparam name="TKey">The type of the key used to identify the resilience strategy.</typeparam>
+    /// <param name="services">The <see cref="IServiceCollection"/> to add the resilience strategy to.</param>
+    /// <param name="key">The key used to identify the resilience strategy.</param>
+    /// <param name="configure">An action that configures the resilience strategy.</param>
+    /// <returns>The updated <see cref="IServiceCollection"/> with the registered resilience strategy.</returns>
+    /// <exception cref="InvalidOperationException">Thrown if the resilience strategy builder with the provided key has already been added to the registry.</exception>
+    /// <remarks>
+    /// You can retrieve the registered strategy by resolving the <see cref="ResilienceStrategyProvider{TKey}"/> class from the dependency injection container.
+    /// <para>
+    /// This call enables the telemetry for the registered resilience strategy.
+    /// </para>
+    /// </remarks>
     public static IServiceCollection AddResilienceStrategy<TKey>(
         this IServiceCollection services,
         TKey key,
