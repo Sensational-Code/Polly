@@ -292,6 +292,8 @@ Polly.ResilienceStrategyBuilderBase.OnCreatingStrategy.set -> void
 Polly.ResilienceStrategyBuilderBase.Properties.get -> Polly.ResilienceProperties!
 Polly.ResilienceStrategyBuilderBase.Randomizer.get -> System.Func<double>!
 Polly.ResilienceStrategyBuilderBase.Randomizer.set -> void
+Polly.ResilienceStrategyBuilderBase.TimeProvider.get -> System.TimeProvider!
+Polly.ResilienceStrategyBuilderBase.TimeProvider.set -> void
 Polly.ResilienceStrategyBuilderBase.Validator.get -> System.Action<Polly.ResilienceValidationContext!>!
 Polly.ResilienceStrategyBuilderContext
 Polly.ResilienceStrategyBuilderContext.BuilderInstanceName.get -> string?
@@ -300,6 +302,7 @@ Polly.ResilienceStrategyBuilderContext.BuilderProperties.get -> Polly.Resilience
 Polly.ResilienceStrategyBuilderContext.StrategyName.get -> string?
 Polly.ResilienceStrategyBuilderContext.StrategyType.get -> string!
 Polly.ResilienceStrategyBuilderContext.Telemetry.get -> Polly.Telemetry.ResilienceStrategyTelemetry!
+Polly.ResilienceStrategyBuilderContext.TimeProvider.get -> System.TimeProvider!
 Polly.ResilienceStrategyBuilderExtensions
 Polly.ResilienceStrategyOptions
 Polly.ResilienceStrategyOptions.ResilienceStrategyOptions() -> void
